@@ -9,8 +9,7 @@ nixPkgs = [
     "php82Extensions.xml",
     "php82Extensions.curl",
     "supervisor",
-    "nginx",
-   "python311Packages.supervisor"
+    "nginx"
   ]
 [ph ases.build]
 cmds = [
