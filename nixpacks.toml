@@ -13,7 +13,7 @@ nixPkgs = [
     "supervisor",
     "nginx"
   ]
-[ph ases.build]
+[phases.build]
 cmds = [
     "mkdir -p /etc/supervisor/conf.d/",
     "cp /assets/worker-*.conf /etc/supervisor/conf.d/",
