@@ -1,13 +1,15 @@
 
 [phases.setup]
 nixPkgs = [
-   "php82",  # Versión explícita de PHP
+   "php82",
     "php82Extensions.mbstring",
     "php82Extensions.openssl",
     "php82Extensions.pdo_mysql",
     "php82Extensions.tokenizer",
     "php82Extensions.xml",
     "php82Extensions.curl",
+    "php82Extensions.zip",
+    "composer",
     "supervisor",
     "nginx"
   ]
