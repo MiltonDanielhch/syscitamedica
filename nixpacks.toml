@@ -11,7 +11,7 @@ cmds = [
     "php artisan key:generate",
     "php artisan migrate --force",
 ]
-x||
+
 [start]
 cmd = '/assets/start.sh'
 
