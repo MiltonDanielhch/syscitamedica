@@ -9,7 +9,7 @@ nixPkgs = [
     "php82Extensions.xml",
     "php82Extensions.curl",
     "php82Extensions.zip",
-    "composer",
+    "php82Packages.composer", 
     "supervisor",
     "nginx"
   ]
