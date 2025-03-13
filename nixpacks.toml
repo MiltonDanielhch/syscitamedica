@@ -10,7 +10,7 @@ nixPkgs = [
     "php82Extensions.curl",
     "php82Extensions.zip",
     "php82Packages.composer", 
-    "supervisor",
+    "python311Packages.supervisor"
     "nginx"
   ]
 [phases.build]
