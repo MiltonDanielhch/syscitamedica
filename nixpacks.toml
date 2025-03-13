@@ -1,7 +1,18 @@
 
 [phases.setup]
-nixPkgs = ["php", "nginx", "python311Packages.supervisor"]
-[phases.build]
+nixPkgs = [
+   "php82",  # Versión explícita de PHP
+    "php82Extensions.mbstring",
+    "php82Extensions.openssl",
+    "php82Extensions.pdo_mysql",
+    "php82Extensions.tokenizer",
+    "php82Extensions.xml",
+    "php82Extensions.curl",
+    "supervisor",
+    "nginx"
+   "python311Packages.supervisor"
+  ]
+[ph ases.build]
 cmds = [
     "mkdir -p /etc/supervisor/conf.d/",
     "cp /assets/worker-*.conf /etc/supervisor/conf.d/",
