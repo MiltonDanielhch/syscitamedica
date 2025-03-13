@@ -12,7 +12,7 @@ cmds = [
     "php artisan key:generate",
     "php artisan migrate --force",
 ]
-
+x||
 [start]
 cmd = '/assets/start.sh'
 
@@ -169,7 +169,7 @@ http {
             include $!{nginx}/conf/fastcgi_params;
             include $!{nginx}/conf/fastcgi.conf;
 
-            fastcgi_param PHP_VALUE "upload_max_filesize=30M \n post_max_size=35M";
+            fastcgi_param PHP_VALUE "upload_max_filesize=30M \\n post_max_size=35M";
         }
 
         location ~ /\.(?!well-known).* {
