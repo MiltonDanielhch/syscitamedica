@@ -1,7 +1,6 @@
 
 [phases.setup]
-nixPkgs = ["...", "python311Packages.supervisor"]
-
+nixPkgs = ["php", "nginx", "python311Packages.supervisor"]
 [phases.build]
 cmds = [
     "mkdir -p /etc/supervisor/conf.d/",
